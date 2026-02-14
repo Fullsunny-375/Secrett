@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Your Gift</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('Yellow picnic.png'); /* Ensure quotes for spaces */
+            background-size: cover;
+            background-position: center;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+
+        .envelope-wrapper {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8); /* Glass effect background */
+            padding: 40px;
+            border-radius: 30px;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .envelope-icon {
+            font-size: 100px;
+            display: block;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1));
+        }
+
+        .button-container {
+            display: flex;
+            gap: 20px; /* Space between Yes and No */
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 15px 35px;
+            border-radius: 50px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+
+        /* YES BUTTON STYLE */
+        .btn-yes {
+            background: #ff4d6d;
+            color: white;
+            box-shadow: 0 5px 15px rgba(255, 77, 109, 0.3);
+        }
+
+        .btn-yes:hover {
+            transform: scale(1.1);
+            background: #ff758f;
+        }
+
+        /* NO BUTTON STYLE */
+        .btn-no {
+            background: #adb5bd;
+            color: white;
+        }
+
+        .btn-no:hover {
+            background: #6c757d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="envelope-wrapper">
+        <span class="envelope-icon">✉️</span>
+        <h2 style="color: #ff4d6d; margin-bottom: 25px;">Will you open my letter?</h2>
+
+        <div class="button-container">
+            <a href="letter.html" class="btn btn-yes">Yes</a>
+            
+            <a href="retry.html" class="btn btn-no">No</a>
+        </div>
+    </div>
+
+</body>
+</html>

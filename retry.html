@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oh no!</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* CUSTOMIZE: Background color of the retry page */
+            background-color: #fff893; 
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 400px;
+        }
+
+        /* CUSTOMIZE: This controls the GIF size and look */
+        .sad-gif {
+            width: 100%;
+            max-width: 250px; /* Limits the size so it's not too big */
+            border-radius: 15px; /* Rounds the corners of the GIF */
+            margin-bottom: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        h1 { 
+            color: #6c757d; 
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #888;
+            margin-bottom: 25px;
+        }
+
+        .btn-retry {
+            display: inline-block;
+            padding: 12px 35px;
+            background-color: #ff4d6d;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.2s, background 0.3s;
+        }
+
+        .btn-retry:hover {
+            background-color: #ff758f;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="crying bear.gif" alt="Sad Panda GIF" class="sad-gif">
+
+        <h1>Are you sure? 🥺</h1>
+        <p>Please try againnnnnn huhu :< </p>
+        
+        <a href="Panda.html" class="btn-retry">Try Again</a>
+    </div>
+
+</body>
+</html>
